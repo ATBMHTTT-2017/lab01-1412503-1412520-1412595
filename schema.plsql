@@ -38,7 +38,7 @@ CREATE TABLE PHONGBAN(
 
 CREATE TABLE PHANCONG(
   maNV char(6),
-  duAn char(6),
+  duAn char(5),
   vaiTro nvarchar2(30),
   phuCap int,
   CONSTRAINT check_phuCap
@@ -51,7 +51,7 @@ CREATE TABLE CHITIEU(
   maChiTieu varchar(9),
   tenChiTieu nvarchar2(50),
   soTien int,
-  duAn char(6) not null,
+  duAn char(5) not null,
   CONSTRAINT check_soTien
   CHECK (soTien > 0),
   PRIMARY KEY(maChiTieu)
@@ -129,25 +129,25 @@ insert into CHINHANH values ('CN005', 'TP Cần Thơ', 'NV0015');
 
 --phong ban
 ---chi nhánh 1
-INSERT INTO PHONGBAN VALUES('PB001', 'Nhân sự', 'NV0008', '2009-06-23', '7', 'CN001');
-INSERT INTO PHONGBAN VALUES('PB002', 'Kế toán', 'NV0009', '2009-07-25', '6', 'CN001');
-INSERT INTO PHONGBAN VALUES('PB003', 'Kế hoạch', 'NV0010', '2010-03-11', '5', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB001', 'Nhân sự', 'NV0008', TO_DATE( '2009-06-23', 'yyyy-mm-dd'), '7', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB002', 'Kế toán', 'NV0009', TO_DATE( '2009-07-25', 'yyyy-mm-dd'), '6', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB003', 'Kế hoạch', 'NV0010', TO_DATE( '2010-03-11', 'yyyy-mm-dd'), '5', 'CN001');
 --chi nhánh 2
-INSERT INTO PHONGBAN VALUES('PB004', 'Nhân sự', 'NV0006', '2010-09-12', '3', 'CN002');
-INSERT INTO PHONGBAN VALUES('PB005', 'Kế toán', 'NV0034', '2011-10-27', '3', 'CN002');
-INSERT INTO PHONGBAN VALUES('PB006', 'Kế hoạch', 'NV0038', '2012-03-29', '5', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB004', 'Nhân sự', 'NV0006', TO_DATE('2010-09-12', 'yyyy-mm-dd'), '3', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB005', 'Kế toán', 'NV0034', TO_DATE('2011-10-27', 'yyyy-mm-dd'), '3', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB006', 'Kế hoạch','NV0038',  TO_DATE('2012-03-29', 'yyyy-mm-dd'), '5', 'CN002');
 --chi nhánh 3
-INSERT INTO PHONGBAN VALUES('PB007', 'Nhân sự', 'NV0035', '2009-04-23', '3', 'CN003');
-INSERT INTO PHONGBAN VALUES('PB008', 'Kế toán', 'NV0039', '2009-04-25', '4', 'CN003');
-INSERT INTO PHONGBAN VALUES('PB009', 'Kế hoạch', 'NV0050', '2010-11-30', '3', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB007', 'Nhân sự', 'NV0035', TO_DATE('2009-04-23', 'yyyy-mm-dd'), '3', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB008', 'Kế toán', 'NV0039', TO_DATE( '2009-04-25', 'yyyy-mm-dd'), '4', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB009', 'Kế hoạch', 'NV0050', TO_DATE('2010-11-30', 'yyyy-mm-dd'), '3', 'CN003');
 --chi nhánh 4
-INSERT INTO PHONGBAN VALUES('PB010', 'Nhân sự', 'NV0036', '2009-10-31', '4', 'CN004');
-INSERT INTO PHONGBAN VALUES('PB011', 'Kế toán', 'NV0040', '2012-07-19', '4', 'CN004');
-INSERT INTO PHONGBAN VALUES('PB012', 'Kế hoạch', 'NV0051', '2008-04-21', '3', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB010', 'Nhân sự', 'NV0036', TO_DATE( '2009-10-31', 'yyyy-mm-dd'), '4', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB011', 'Kế toán', 'NV0040', TO_DATE( '2012-07-19' , 'yyyy-mm-dd'), '4', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB012', 'Kế hoạch', 'NV0051', TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '3', 'CN004');
 --chi nhánh 5
-INSERT INTO PHONGBAN VALUES('PB013', 'Nhân sự', 'NV0037', '2010-07-23', '3', 'CN005');
-INSERT INTO PHONGBAN VALUES('PB014', 'Kế toán', 'NV0041', '2009-12-25', '3', 'CN005');
-INSERT INTO PHONGBAN VALUES('PB015', 'Kế hoạch', 'NV0007', '2011-04-21', '4', 'CN005');
+INSERT INTO PHONGBAN VALUES('PB013', 'Nhân sự', 'NV0037', TO_DATE( '2007-04-11', 'yyyy-mm-dd'), '3', 'CN005');
+INSERT INTO PHONGBAN VALUES('PB014', 'Kế toán', 'NV0041', TO_DATE( '2008-05-29', 'yyyy-mm-dd'), '3', 'CN005');
+INSERT INTO PHONGBAN VALUES('PB015', 'Kế hoạch', 'NV0007', TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '4',  'CN005');
 
 --trưởng chi nhánh
 insert into NHANVIEN values ('NV0011', 'Ngô Hồng Bảo Ngọc', '115, Nguyễn Huệ, phường Bến Nghé, Quận 1, TP.HCM', '01671671677', 'nhbngoc@gmail.com', 'PB001', 'CN001',8000000);
@@ -234,12 +234,12 @@ insert into DUAN values ('DA006', 'Chung cư mới', 150000000000, 'PB005', 'NV0
 insert into DUAN values ('DA007', 'Khu du lịch sinh thái Cỏ', 100000000000, 'PB003', 'NV0005');
 insert into DUAN values ('DA008', 'Trung tâm thương mại Nắng', 200000000000, 'PB008', 'NV0054');
 insert into DUAN values ('DA009', 'Lake Bank', 120000000000, 'PB013', 'NV0055');
-insert into DUAN values ('DA0010', 'Trường THPT Trần Quang',100000000000, 'PB004', 'NV0056');
-insert into DUAN values ('DA0011', 'Chung cư Saiko', 150000000000, 'PB009', 'NV0057');
-insert into DUAN values ('DA0012', 'Rạp chiếu phim Akako', 100000000000, 'PB014', 'NV0058');
-insert into DUAN values ('DA0013', 'Ngân hàng ABD ', 200000000000, 'PB010', 'NV0059');
-insert into DUAN values ('DA0014', 'Beach Bank', 120000000000, 'PB012', 'NV0060');
-insert into DUAN values ('DA0015', 'Cửa hàng ABC',100000000000, 'PB015', 'NV0061');
+insert into DUAN values ('DA010', 'Trường THPT Trần Quang',100000000000, 'PB004', 'NV0056');
+insert into DUAN values ('DA011', 'Chung cư Saiko', 150000000000, 'PB009', 'NV0057');
+insert into DUAN values ('DA012', 'Rạp chiếu phim Akako', 100000000000, 'PB014', 'NV0058');
+insert into DUAN values ('DA013', 'Ngân hàng ABD ', 200000000000, 'PB010', 'NV0059');
+insert into DUAN values ('DA014', 'Beach Bank', 120000000000, 'PB012', 'NV0060');
+insert into DUAN values ('DA015', 'Cửa hàng ABC',100000000000, 'PB015', 'NV0061');
 
 --Phân công
 insert into PHANCONG values ('NV0001', 'DA001', 'Trưởng dự án',6000000);
@@ -301,13 +301,14 @@ insert into CHITIEU values ('CT015', 'Nguyên vật liệu', 35000000000, 'DA012
 insert into CHITIEU values ('CT016', 'Mặt bằng', 45000000000, 'DA013');
 insert into CHITIEU values ('CT017', 'Nguyên vật liệu', 30000000000, 'DA014');
 insert into CHITIEU values ('CT018', 'Nhân công', 40000000000, 'DA014');
-insert into CHITIEU values ('CT019', 'Mặt bằng', 40000000000, 'DA0015');
-insert into CHITIEU values ('CT020', 'Nhân công', 35000000000, 'DA0015');
+insert into CHITIEU values ('CT019', 'Mặt bằng', 40000000000, 'DA015');
+insert into CHITIEU values ('CT020', 'Nhân công', 35000000000, 'DA015');
 
 --tạo người dùng
 --tài khoản quản trị viên
 CREATE USER QTV IDENTIFIED BY quantrivien;
 GRANT DBA TO QTV;
+GRANT CREATE SESSION TO QTV;
 
 ---tài khoản trưởng phòng
 CREATE USER NV0006 IDENTIFIED BY NV0006;
