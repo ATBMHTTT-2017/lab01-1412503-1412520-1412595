@@ -121,33 +121,35 @@ REFERENCES DUAN(maDA);
 
 --tạo dữ liệu
 --chi nhánh
-insert into CHINHANH values ('CN001', 'TP Hà Nội', 'NV0011');
-insert into CHINHANH values ('CN002', 'TP Hải Phòng', 'NV0012');
-insert into CHINHANH values ('CN003', 'TP Đà Nẵng', 'NV0013');
-insert into CHINHANH values ('CN004', 'TP Hồ Chí Minh', 'NV0014');
-insert into CHINHANH values ('CN005', 'TP Cần Thơ', 'NV0015');
+insert into CHINHANH values ('CN001', 'TP Hà Nội', null);
+insert into CHINHANH values ('CN002', 'TP Hải Phòng', null);
+insert into CHINHANH values ('CN003', 'TP Đà Nẵng', null);
+insert into CHINHANH values ('CN004', 'TP Hồ Chí Minh', null);
+insert into CHINHANH values ('CN005', 'TP Cần Thơ', null);
 
 --phong ban
 ---chi nhánh 1
-INSERT INTO PHONGBAN VALUES('PB001', 'Nhân sự', 'NV0008', TO_DATE( '2009-06-23', 'yyyy-mm-dd'), '7', 'CN001');
-INSERT INTO PHONGBAN VALUES('PB002', 'Kế toán', 'NV0009', TO_DATE( '2009-07-25', 'yyyy-mm-dd'), '6', 'CN001');
-INSERT INTO PHONGBAN VALUES('PB003', 'Kế hoạch', 'NV0010', TO_DATE( '2010-03-11', 'yyyy-mm-dd'), '5', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB001', 'Nhân sự', null, TO_DATE( '2009-06-23', 'yyyy-mm-dd'), '7', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB002', 'Kế toán', null, TO_DATE( '2009-07-25', 'yyyy-mm-dd'), '6', 'CN001');
+INSERT INTO PHONGBAN VALUES('PB003', 'Kế hoạch', null, TO_DATE( '2010-03-11', 'yyyy-mm-dd'), '5', 'CN001');
 --chi nhánh 2
-INSERT INTO PHONGBAN VALUES('PB004', 'Nhân sự', 'NV0006', TO_DATE('2010-09-12', 'yyyy-mm-dd'), '3', 'CN002');
-INSERT INTO PHONGBAN VALUES('PB005', 'Kế toán', 'NV0034', TO_DATE('2011-10-27', 'yyyy-mm-dd'), '3', 'CN002');
-INSERT INTO PHONGBAN VALUES('PB006', 'Kế hoạch','NV0038',  TO_DATE('2012-03-29', 'yyyy-mm-dd'), '5', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB004', 'Nhân sự', null, TO_DATE('2010-09-12', 'yyyy-mm-dd'), '3', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB005', 'Kế toán', null, TO_DATE('2011-10-27', 'yyyy-mm-dd'), '3', 'CN002');
+INSERT INTO PHONGBAN VALUES('PB006', 'Kế hoạch', null, TO_DATE('2012-03-29', 'yyyy-mm-dd'), '5', 'CN002');
 --chi nhánh 3
-INSERT INTO PHONGBAN VALUES('PB007', 'Nhân sự', 'NV0035', TO_DATE('2009-04-23', 'yyyy-mm-dd'), '3', 'CN003');
-INSERT INTO PHONGBAN VALUES('PB008', 'Kế toán', 'NV0039', TO_DATE( '2009-04-25', 'yyyy-mm-dd'), '4', 'CN003');
-INSERT INTO PHONGBAN VALUES('PB009', 'Kế hoạch', 'NV0050', TO_DATE('2010-11-30', 'yyyy-mm-dd'), '3', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB007', 'Nhân sự', null, TO_DATE('2009-04-23', 'yyyy-mm-dd'), '3', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB008', 'Kế toán', null, TO_DATE( '2009-04-25', 'yyyy-mm-dd'), '4', 'CN003');
+INSERT INTO PHONGBAN VALUES('PB009', 'Kế hoạch', null, TO_DATE('2010-11-30', 'yyyy-mm-dd'), '3', 'CN003');
 --chi nhánh 4
-INSERT INTO PHONGBAN VALUES('PB010', 'Nhân sự', 'NV0036', TO_DATE( '2009-10-31', 'yyyy-mm-dd'), '4', 'CN004');
-INSERT INTO PHONGBAN VALUES('PB011', 'Kế toán', 'NV0040', TO_DATE( '2012-07-19' , 'yyyy-mm-dd'), '4', 'CN004');
-INSERT INTO PHONGBAN VALUES('PB012', 'Kế hoạch', 'NV0051', TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '3', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB010', 'Nhân sự', null, TO_DATE( '2009-10-31', 'yyyy-mm-dd'), '4', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB011', 'Kế toán', null, TO_DATE( '2012-07-19' , 'yyyy-mm-dd'), '4', 'CN004');
+INSERT INTO PHONGBAN VALUES('PB012', 'Kế hoạch', null, TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '3', 'CN004');
 --chi nhánh 5
-INSERT INTO PHONGBAN VALUES('PB013', 'Nhân sự', 'NV0037', TO_DATE( '2007-04-11', 'yyyy-mm-dd'), '3', 'CN005');
-INSERT INTO PHONGBAN VALUES('PB014', 'Kế toán', 'NV0041', TO_DATE( '2008-05-29', 'yyyy-mm-dd'), '3', 'CN005');
-INSERT INTO PHONGBAN VALUES('PB015', 'Kế hoạch', 'NV0007', TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '4',  'CN005');
+INSERT INTO PHONGBAN VALUES('PB013', 'Nhân sự', null, TO_DATE( '2007-04-11', 'yyyy-mm-dd'), '3', 'CN005');
+INSERT INTO PHONGBAN VALUES('PB014', 'Kế toán', null, TO_DATE( '2008-05-29', 'yyyy-mm-dd'), '3', 'CN005');
+INSERT INTO PHONGBAN VALUES('PB015', 'Kế hoạch', null, TO_DATE( '2008-04-21', 'yyyy-mm-dd'), '4',  'CN005');
+
+
 
 --trưởng chi nhánh
 insert into NHANVIEN values ('NV0011', 'Ngô Hồng Bảo Ngọc', '115, Nguyễn Huệ, phường Bến Nghé, Quận 1, TP.HCM', '01671671677', 'nhbngoc@gmail.com', 'PB001', 'CN001',8000000);
@@ -223,6 +225,34 @@ insert into NHANVIEN values ('NV0046', 'Võ Hoàng Phúc', '196 Pasteur, phườ
 insert into NHANVIEN values ('NV0047', 'Ngô Hồng Phúc', '32 Nguyễn Du, phường Bến Nghé, Quận 1, TPHCM', '01691154768', 'nhphuc@gmail.com', 'PB002', 'CN001',6000000);
 insert into NHANVIEN values ('NV0048', 'Ngô Huỳnh Phúc Khang', '42 Cộng Hòa, phường 4, Quận Tân Bình, TPHCM', '0948745434', 'nhpkhang@gmail.com', 'PB005', 'CN002',600000);
 insert into NHANVIEN values ('NV0049', 'Nguyễn Hoàng Thành', '95 Võ Thị Sáu, phường Tân Định, Quận 1, TPHCM', '01677234985', 'nhthanh@gmail.com', 'PB003', 'CN001',6500000);
+
+--Cập nhật trưởng chi nhánh
+update CHINHANH set truongChiNhanh = 'NV0011' where maCN='CN001';
+update CHINHANH set truongChiNhanh = 'NV0012' where maCN='CN002';
+update CHINHANH set truongChiNhanh = 'NV0013' where maCN='CN003';
+update CHINHANH set truongChiNhanh = 'NV0014' where maCN='CN004';
+update CHINHANH set truongChiNhanh = 'NV0015' where maCN='CN005';
+
+--cập nhật phòng ban
+UPDATE PHONGBAN SET truongPhong = 'NV0008' WHERE maPhong = 'PB001'
+UPDATE PHONGBAN SET truongPhong = 'NV0009' WHERE maPhong = 'PB002'
+UPDATE PHONGBAN SET truongPhong = 'NV0010' WHERE maPhong = 'PB003'
+
+UPDATE PHONGBAN SET truongPhong = 'NV0006' WHERE maPhong = 'PB004'
+UPDATE PHONGBAN SET truongPhong = 'NV0034' WHERE maPhong = 'PB005'
+UPDATE PHONGBAN SET truongPhong = 'NV0038' WHERE maPhong = 'PB006'
+
+UPDATE PHONGBAN SET truongPhong = 'NV0035' WHERE maPhong = 'PB007'
+UPDATE PHONGBAN SET truongPhong = 'NV0039' WHERE maPhong = 'PB008'
+UPDATE PHONGBAN SET truongPhong = 'NV0050' WHERE maPhong = 'PB009'
+
+UPDATE PHONGBAN SET truongPhong = 'NV0036' WHERE maPhong = 'PB010'
+UPDATE PHONGBAN SET truongPhong = 'NV0040' WHERE maPhong = 'PB011'
+UPDATE PHONGBAN SET truongPhong = 'NV0051' WHERE maPhong = 'PB012'
+
+UPDATE PHONGBAN SET truongPhong = 'NV0037' WHERE maPhong = 'PB013'
+UPDATE PHONGBAN SET truongPhong = 'NV0041' WHERE maPhong = 'PB014'
+UPDATE PHONGBAN SET truongPhong = 'NV0007' WHERE maPhong = 'PB015'
 
 --Dự án
 insert into DUAN values ('DA001', 'Chung cư Riverside', 150000000000, 'PB001', 'NV0001');
