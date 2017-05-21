@@ -1,4 +1,5 @@
 --tao Database Session Context cho cac loai nhan vien
+CREATE CONTEXT emp_ctx USING set_title_ctx_pkg;
 CREATE OR REPLACE PACKAGE set_title_ctx_pkg IS 
    PROCEDURE set_title; 
  END; 
