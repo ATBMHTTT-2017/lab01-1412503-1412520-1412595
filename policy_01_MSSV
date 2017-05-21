@@ -150,9 +150,7 @@ CREATE OR REPLACE TRIGGER set_title_ctx_trig AFTER LOGON ON DATABASE
     policy_function  => 'auth_chitieu_select',
     statement_types  => 'select, update'
    );
- END;
  ---Trưởng dự án chỉ được phép ghi thông tin chi tiêu của dự án mình quản lý
- BEGIN
     DBMS_RLS.add_policy('QTV', 'CHITIEU', 'chitieu_policy1', 
                       'QTV', 'auth_chitieu_insert',
                       'INSERT', TRUE);
