@@ -234,25 +234,25 @@ update CHINHANH set truongChiNhanh = 'NV0014' where maCN='CN004';
 update CHINHANH set truongChiNhanh = 'NV0015' where maCN='CN005';
 
 --cập nhật phòng ban
-UPDATE PHONGBAN SET truongPhong = 'NV0008' WHERE maPhong = 'PB001'
-UPDATE PHONGBAN SET truongPhong = 'NV0009' WHERE maPhong = 'PB002'
-UPDATE PHONGBAN SET truongPhong = 'NV0010' WHERE maPhong = 'PB003'
+UPDATE PHONGBAN SET truongPhong = 'NV0008' WHERE maPhong = 'PB001';
+UPDATE PHONGBAN SET truongPhong = 'NV0009' WHERE maPhong = 'PB002';
+UPDATE PHONGBAN SET truongPhong = 'NV0010' WHERE maPhong = 'PB003';
 
-UPDATE PHONGBAN SET truongPhong = 'NV0006' WHERE maPhong = 'PB004'
-UPDATE PHONGBAN SET truongPhong = 'NV0034' WHERE maPhong = 'PB005'
-UPDATE PHONGBAN SET truongPhong = 'NV0038' WHERE maPhong = 'PB006'
+UPDATE PHONGBAN SET truongPhong = 'NV0006' WHERE maPhong = 'PB004';
+UPDATE PHONGBAN SET truongPhong = 'NV0034' WHERE maPhong = 'PB005';
+UPDATE PHONGBAN SET truongPhong = 'NV0038' WHERE maPhong = 'PB006';
 
-UPDATE PHONGBAN SET truongPhong = 'NV0035' WHERE maPhong = 'PB007'
-UPDATE PHONGBAN SET truongPhong = 'NV0039' WHERE maPhong = 'PB008'
-UPDATE PHONGBAN SET truongPhong = 'NV0050' WHERE maPhong = 'PB009'
+UPDATE PHONGBAN SET truongPhong = 'NV0035' WHERE maPhong = 'PB007';
+UPDATE PHONGBAN SET truongPhong = 'NV0039' WHERE maPhong = 'PB008';
+UPDATE PHONGBAN SET truongPhong = 'NV0050' WHERE maPhong = 'PB009';
 
-UPDATE PHONGBAN SET truongPhong = 'NV0036' WHERE maPhong = 'PB010'
-UPDATE PHONGBAN SET truongPhong = 'NV0040' WHERE maPhong = 'PB011'
-UPDATE PHONGBAN SET truongPhong = 'NV0051' WHERE maPhong = 'PB012'
+UPDATE PHONGBAN SET truongPhong = 'NV0036' WHERE maPhong = 'PB010';
+UPDATE PHONGBAN SET truongPhong = 'NV0040' WHERE maPhong = 'PB011';
+UPDATE PHONGBAN SET truongPhong = 'NV0051' WHERE maPhong = 'PB012';
 
-UPDATE PHONGBAN SET truongPhong = 'NV0037' WHERE maPhong = 'PB013'
-UPDATE PHONGBAN SET truongPhong = 'NV0041' WHERE maPhong = 'PB014'
-UPDATE PHONGBAN SET truongPhong = 'NV0007' WHERE maPhong = 'PB015'
+UPDATE PHONGBAN SET truongPhong = 'NV0037' WHERE maPhong = 'PB013';
+UPDATE PHONGBAN SET truongPhong = 'NV0041' WHERE maPhong = 'PB014';
+UPDATE PHONGBAN SET truongPhong = 'NV0007' WHERE maPhong = 'PB015';
 
 --Dự án
 insert into DUAN values ('DA001', 'Chung cư Riverside', 150000000000, 'PB001', 'NV0001');
