@@ -26,4 +26,26 @@ GRANT TruongDuAn TO NV0059;
 GRANT TruongDuAn TO NV0060;
 GRANT TruongDuAn TO NV0061;
 
+GRANT TruongChiNhanh TO NV0011;
+GRANT TruongChiNhanh TO NV0012;
+GRANT TruongChiNhanh TO NV0013;
+GRANT TruongChiNhanh TO NV0014;
+GRANT TruongChiNhanh TO NV0015;
+
+GRANT TruongPhong TO NV0006;
+GRANT TruongPhong TO NV0007;
+GRANT TruongPhong TO NV0008;
+GRANT TruongPhong TO NV0009;
+GRANT TruongPhong TO NV0010;
+GRANT TruongPhong TO NV0034;
+GRANT TruongPhong TO NV0035;
+GRANT TruongPhong TO NV0036;
+GRANT TruongPhong TO NV0037;
+GRANT TruongPhong TO NV0038;
+GRANT TruongPhong TO NV0039;
+GRANT TruongPhong TO NV0040;
+GRANT TruongPhong TO NV0041;
+GRANT TruongPhong TO NV0050;
+GRANT TruongPhong TO NV0051;
+
 SET ROLE ALL
